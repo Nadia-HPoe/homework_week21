@@ -1,11 +1,7 @@
-import React from 'react';
-import { createRoot } from 'react-dom/client';
-import { Button } from './presentation/ui-kit/Button';
-import './assets/global.scss';
+import React from "react";
+import { createRoot } from "react-dom/client";
+import { App } from "./presentation/App";
+import "./assets/global.scss";
 
-function onButtonClick() {
-  console.log('Нажато');
-}
-
-const root = createRoot(document.getElementById('app'));
-root.render(<Button onClick={onButtonClick}>Кнопка React</Button>);
+const root = createRoot(document.getElementById("app"));
+root.render(<App />);
